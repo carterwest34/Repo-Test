@@ -12,9 +12,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.red
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func button_tapped(_ sender: Any) {
+        if view.backgroundColor == UIColor.red{
+            view.backgroundColor = UIColor.blue
+        }else{
+            view.backgroundColor = UIColor.red
+        }
+    }
+    
 }
 
